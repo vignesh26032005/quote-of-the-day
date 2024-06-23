@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Click the button to get a quote!"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:background="@drawable/quote_background"/>
+
+    <Button
+        android:id="@+id/newQuoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quoteTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="New Quote"
+        android:onClick="displayNewQuote"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/shareQuoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newQuoteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Share Quote"
+        android:onClick="shareQuote"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/favoriteQuoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shareQuoteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Favorite Quote"
+        android:onClick="favoriteQuote"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/viewFavoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favoriteQuoteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="View Favorites"
+        android:onClick="viewFavorites"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
